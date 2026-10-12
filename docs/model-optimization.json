@@ -1,0 +1,494 @@
+{
+  "generatedAt": "2026-10-11T19:34:13.301Z",
+  "generator": "scripts/optimize_models.mjs",
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "meshoptimizer": "1.3.0"
+  },
+  "settings": {
+    "meshoptLevel": "medium",
+    "quantizationBits": 16,
+    "outOfRangeUVs": "Original float precision retained",
+    "simplification": false,
+    "textureProcessing": false
+  },
+  "note": "Geometry quantization is high precision but not mathematically lossless. Original files, texture bytes, animation keyframes and credits are preserved. Browser rendering must still be visually checked.",
+  "decoder": {
+    "path": "public/vendor/meshopt_decoder.js",
+    "bytes": 30446,
+    "sha256": "60272b9431b7e2e91194abc9d320f1c94356b456dadf01641801b827d4c19542",
+    "license": "MIT",
+    "externalWasmRequired": false
+  },
+  "viewerCompatibility": {
+    "modelViewerSha256": "8367184a607fbe07a78b650c0d359e5ebbd96f7e2b22f95f761f559b63430386",
+    "bundledDecoderVerified": true,
+    "compressedViewsDecoded": 556
+  },
+  "originalTotalBytes": 17672204,
+  "optimizedTotalBytes": 9895500,
+  "models": [
+    {
+      "source": "public/models/iphone-16-pro-max.glb",
+      "optimized": "public/models/optimized/iphone-16-pro-max-v2.glb",
+      "originalBytes": 7814636,
+      "optimizedBytes": 5734296,
+      "savedBytes": 2080340,
+      "reductionPercent": 26.62,
+      "sourceSha256": "a1721d096d31bae815b59280c9ddf859c5c1a5cfc2e0efb19af735f8d2dc34d8",
+      "optimizedSha256": "0adafd8acdecde1762f301ac459004f6f3c5390b1e93a3c5f171a314dbf50c58",
+      "triangles": 51520,
+      "primitiveCount": 38,
+      "compressedViews": 110,
+      "textureBytesUnchanged": true,
+      "textureImages": [
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 534978,
+          "sha256": "037dfd3d0ca9788eb5352be6382c7edbc359256ee91feea2767bda335eb56f6a"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 55948,
+          "sha256": "2d827aa606ab0922ce15347452dda78eedbf0ff2dbe0ffe60f6cf33e2ca6cf00"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 4236092,
+          "sha256": "621ebcb1e0eaab0ffdba817146bcb016ff24139566098ee0dc0ee23431ca6440"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 277077,
+          "sha256": "b75824a541256ee082944fd4c00313fa2aac5751755c0cb234c0bcdeb8c6386b"
+        }
+      ],
+      "animationKeyframesUnchanged": true,
+      "animations": [],
+      "bounds": {
+        "before": {
+          "min": [
+            -0.047646297939576976,
+            -0.8192739741400638,
+            -0.4037232022746764
+          ],
+          "max": [
+            0.08509243708571941,
+            0.8644807578558333,
+            0.4046855813759467
+          ]
+        },
+        "after": {
+          "min": [
+            -0.04765727790136325,
+            -0.8192739741402442,
+            -0.40371860310570584
+          ],
+          "max": [
+            0.08509272060910934,
+            0.8644807578575113,
+            0.40468098220713766
+          ]
+        },
+        "relativeError": 0.000006521117106682979
+      },
+      "animationPoseBounds": [],
+      "requiredExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    {
+      "source": "public/models/iphone-18-pro-max.glb",
+      "optimized": "public/models/optimized/iphone-18-pro-max-v2.glb",
+      "originalBytes": 3860024,
+      "optimizedBytes": 1634604,
+      "savedBytes": 2225420,
+      "reductionPercent": 57.65,
+      "sourceSha256": "40085543aeb46bc92a4c4cd3032d86bb4cd17d9b9c6a934515d7dcddd2f37b85",
+      "optimizedSha256": "778d76f3f2eaa54a1a3810fc350c579230890aa89af317f6ebf1bdbbaf77e00f",
+      "triangles": 64954,
+      "primitiveCount": 43,
+      "compressedViews": 202,
+      "textureBytesUnchanged": true,
+      "textureImages": [
+        {
+          "mimeType": "image/png",
+          "bytes": 1076,
+          "sha256": "34a8547a9b64c1c5d0c617af5077690454cba7778f5ce7a5a2bea1cbf9bc13f9"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 171157,
+          "sha256": "7f5916e7951e1cd4225d5ee391d6295a75a0562b96ac2ec91de570ee9524bc5c"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 93524,
+          "sha256": "8ae13e53d52138e41c4d72af8fb0b1fcb520a684e2b4bd7de8b6ec1efb78a80f"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 42482,
+          "sha256": "a39a3b98b85867f7202db49e418a594ca23067254f70b0cc546985c167f18c22"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 7057,
+          "sha256": "bf46ce929fd84b63744586e982acf73852803a10d54adbbb086e6697db13e739"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 1224,
+          "sha256": "d6563b682fd6c53d753d1e011ca3e9e9b186695f6b08dc698dccea2eabdbd897"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 1505,
+          "sha256": "db27bd2c43c024e5793ebb8ecde6b5248580e733e76a4328cf9f65317f683231"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 2861,
+          "sha256": "ee0ed900189fafce4858d5249e3dfec671da7140d81448f69ae9ec040f084993"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 24182,
+          "sha256": "f41d21f96a90718c47773769714094c3c9fc94661dabbbd06bb9920f4df64161"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 2352,
+          "sha256": "f4b3fa035cdb242afdf4d2e67871863e5b2363f8e0f472bc72b6ce716a8f72fc"
+        }
+      ],
+      "animationKeyframesUnchanged": true,
+      "animations": [],
+      "bounds": {
+        "before": {
+          "min": [
+            -0.03946299850940704,
+            -0.000018000000636675395,
+            -0.009217999875545502
+          ],
+          "max": [
+            0.0395050011575222,
+            0.16333800554275513,
+            0.0043219998478889465
+          ]
+        },
+        "after": {
+          "min": [
+            -0.039462497436757255,
+            -0.000018017047653262413,
+            -0.009218159718333535
+          ],
+          "max": [
+            0.03950450008487241,
+            0.16333800554275513,
+            0.0043219998478889465
+          ]
+        },
+        "relativeError": 0.000003067365954022655
+      },
+      "animationPoseBounds": [],
+      "requiredExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    {
+      "source": "public/models/iphone-duo.glb",
+      "optimized": "public/models/optimized/iphone-duo-v2.glb",
+      "originalBytes": 5997544,
+      "optimizedBytes": 2526600,
+      "savedBytes": 3470944,
+      "reductionPercent": 57.87,
+      "sourceSha256": "18681b84de5896513cbaeaefc08ee8af8ed41856aecd85a4791b6075149f3a6d",
+      "optimizedSha256": "3c9f14d736f4face6c97dd0df802eb1743ce1208a5b6b14473fdb68740ddc7f5",
+      "triangles": 102018,
+      "primitiveCount": 49,
+      "compressedViews": 244,
+      "textureBytesUnchanged": true,
+      "textureImages": [
+        {
+          "mimeType": "image/png",
+          "bytes": 795,
+          "sha256": "128898536701c41385cbb4615598b16c35fd2ab6c202c20da7e8a89b8441f00f"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 1797,
+          "sha256": "17e460b3a059ff191ef9a988706985313aa9adc8a519e7addfecf40631dc4a85"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 7358,
+          "sha256": "2805dac9c463fe8074246b896770a9f2f5121890237bbe4af66a57f9cc639ea3"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 348592,
+          "sha256": "30856ed3eb0ced599e42084e7279cbb613f420f4e165fb2885caffe05f402283"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 10775,
+          "sha256": "4e8d716cd82d075a427c5c26a036d8badb4df5990de9e16e2a092ff9989fdfb4"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 75111,
+          "sha256": "7515f74b38a6e6114ff4eaa7af9de9547743a31e27f1d2e72dcdbaf9d28ee39d"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 171157,
+          "sha256": "7f5916e7951e1cd4225d5ee391d6295a75a0562b96ac2ec91de570ee9524bc5c"
+        },
+        {
+          "mimeType": "image/jpeg",
+          "bytes": 88467,
+          "sha256": "8aff274ba217c9c29329c01c6ab43f983b16634222c27a6aa3464c0841a0cb20"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 3776,
+          "sha256": "a6a536b0c63961176b7292547a9b741dfcb190591440fc7445a552a9df3e4b43"
+        },
+        {
+          "mimeType": "image/png",
+          "bytes": 26245,
+          "sha256": "c6cf1938e37524fd63b374e34e583967d77d34f9fab333c9875b518297ef6b83"
+        }
+      ],
+      "animationKeyframesUnchanged": true,
+      "animations": [
+        {
+          "name": "open-close",
+          "start": 0,
+          "end": 2,
+          "duration": 2,
+          "channels": [
+            {
+              "node": "Axle",
+              "path": "translation",
+              "interpolation": "LINEAR",
+              "keyframes": 61,
+              "inputSha256": "fe2d6770c0c56382931e130117a89d2e1b7024c8fde52d94af4f9e8ed542d493",
+              "outputSha256": "c2f060439851ffb2aa067c293524fa394640eca4799da659e7813a030180d1aa"
+            },
+            {
+              "node": "Bone_01",
+              "path": "rotation",
+              "interpolation": "LINEAR",
+              "keyframes": 61,
+              "inputSha256": "fe2d6770c0c56382931e130117a89d2e1b7024c8fde52d94af4f9e8ed542d493",
+              "outputSha256": "f70a8d67fc6746f65767fe73c6c3daab1d2ca2bbe6b61a6678f47aa9d7080e8b"
+            },
+            {
+              "node": "Bone_01",
+              "path": "scale",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b"
+            },
+            {
+              "node": "Bone_01",
+              "path": "translation",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "218cefd9f38b00c4a1a87a36950a7049a778d0235b288eb63bfc0cec3a713b73"
+            },
+            {
+              "node": "Bone_02",
+              "path": "rotation",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "126e0c09e4b2b0560a12ea11e05f647981f2e9319971a2d03b055d74da71178e"
+            },
+            {
+              "node": "Bone_02",
+              "path": "scale",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "65a3fd3e05bdea8de3d93d1c3046870b72a947a28e072017156863715944a73d"
+            },
+            {
+              "node": "Bone_02",
+              "path": "translation",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "14e673eceeb9a13dd0a04755b568043b768c8f19bb86bdd64cedd29d6037ac31"
+            },
+            {
+              "node": "Bone_Hinge",
+              "path": "rotation",
+              "interpolation": "LINEAR",
+              "keyframes": 61,
+              "inputSha256": "fe2d6770c0c56382931e130117a89d2e1b7024c8fde52d94af4f9e8ed542d493",
+              "outputSha256": "4e3d56bd6de2afb73200365fba993ceac2a93fbaa3ff6758cac9804d7447ac19"
+            },
+            {
+              "node": "Bone_Hinge",
+              "path": "scale",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b"
+            },
+            {
+              "node": "Bone_Hinge",
+              "path": "translation",
+              "interpolation": "STEP",
+              "keyframes": 2,
+              "inputSha256": "3f710ac088db33363087de2b9a657541fe5447821debaa9fe5cbd538eb1a5f29",
+              "outputSha256": "88bbf1fce0efa169ae4126da953be6c66319402e81b87b509bc4c129e84c0923"
+            },
+            {
+              "node": "Hinge_Bottom_Transform",
+              "path": "translation",
+              "interpolation": "LINEAR",
+              "keyframes": 61,
+              "inputSha256": "fe2d6770c0c56382931e130117a89d2e1b7024c8fde52d94af4f9e8ed542d493",
+              "outputSha256": "e3c30ed185f285470f12a41dd12019c965f4de7892f7457894af793dc3cfd640"
+            },
+            {
+              "node": "Hinge_Top_Transform",
+              "path": "translation",
+              "interpolation": "LINEAR",
+              "keyframes": 61,
+              "inputSha256": "fe2d6770c0c56382931e130117a89d2e1b7024c8fde52d94af4f9e8ed542d493",
+              "outputSha256": "b200cec1107a3bb166ab41951d246695457bdf97caa99dc8bdc2d6bad5278a96"
+            }
+          ]
+        }
+      ],
+      "bounds": {
+        "before": {
+          "min": [
+            -0.08279304391986912,
+            0.00001316944297056861,
+            -0.008700000430600952
+          ],
+          "max": [
+            0.08320876434403414,
+            0.11825120942785908,
+            0.0025848147892848588
+          ]
+        },
+        "after": {
+          "min": [
+            -0.08279346995922918,
+            0.000013169442895200056,
+            -0.008699827293337358
+          ],
+          "max": [
+            0.08320867589666908,
+            0.11825120942785908,
+            0.0025850139970919435
+          ]
+        },
+        "relativeError": 0.000002566474212000128
+      },
+      "animationPoseBounds": [
+        {
+          "time": 0,
+          "relativeError": 0.0000025082920016196015,
+          "before": {
+            "min": [
+              -0.0827930430712915,
+              0.00001319124452545545,
+              -0.008700000430602609
+            ],
+            "max": [
+              0.08320876859631439,
+              0.11825121646429235,
+              0.0025848150157370088
+            ]
+          },
+          "after": {
+            "min": [
+              -0.08279345945229942,
+              0.000013191244501165045,
+              -0.008699827293339015
+            ],
+            "max": [
+              0.08320867991509617,
+              0.11825121646433451,
+              0.002585014223544114
+            ]
+          }
+        },
+        {
+          "time": 1,
+          "relativeError": 0.0000032014920306403402,
+          "before": {
+            "min": [
+              -0.0054120787057088315,
+              0.00001316314427195118,
+              -0.008700000430602609
+            ],
+            "max": [
+              0.08320876859631439,
+              0.11825121646429235,
+              0.0852963557939686
+            ]
+          },
+          "after": {
+            "min": [
+              -0.005411547252242603,
+              0.000013163073859422114,
+              -0.008699827293339015
+            ],
+            "max": [
+              0.08320867991509617,
+              0.11825121646433451,
+              0.0852967721171472
+            ]
+          }
+        },
+        {
+          "time": 2,
+          "relativeError": 0.000004261494634948452,
+          "before": {
+            "min": [
+              -0.0018620673555544815,
+              0.000013183993529664463,
+              -0.008700000430602609
+            ],
+            "max": [
+              0.08320876859631439,
+              0.11825121646429235,
+              0.008077552443871528
+            ]
+          },
+          "after": {
+            "min": [
+              -0.0018627747713697899,
+              0.000013183821360424064,
+              -0.008699827293339015
+            ],
+            "max": [
+              0.08320867991509617,
+              0.11825121646433451,
+              0.00807702109264824
+            ]
+          }
+        }
+      ],
+      "requiredExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    }
+  ]
+}

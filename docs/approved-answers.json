@@ -1,0 +1,1147 @@
+{
+  "project": "iPhones by Shah",
+  "version": 1,
+  "exportedAt": "2026-10-11T15:20:04.363Z",
+  "answers": {
+    "brand_name": "iPhones by Shah",
+    "brand_owner": "Ukkasha Ali",
+    "positioning": "Curated phones",
+    "tagline": "Keep as a supporting line",
+    "audience": [
+      "Value-conscious buyers"
+    ],
+    "categories": [
+      "Apple iPhones"
+    ],
+    "primary_goal": "Stock enquiries",
+    "brand_differences": "best prices ",
+    "visual_direction": "White studio",
+    "accent": "Burgundy",
+    "logo_use": "Original + clean wordmark",
+    "headline": "Your next phone. A whole new feeling.",
+    "hero_motion": "Gentle float + cursor tilt",
+    "side_models": "Use the supplied 16 + Duo",
+    "mobile_3d": "One optimized 3D hero",
+    "micro_interactions": [
+      "Soft section reveals",
+      "Stock-card hover lift",
+      "Smooth gallery transitions",
+      "Filter transitions",
+      "Custom cursor",
+      "Subtle loading skeletons"
+    ],
+    "stock_layout": "Editorial grid",
+    "inventory_unit": "One individual device",
+    "home_stock": "Fresh stock immediately after hero",
+    "stock_filters": [
+      "Brand",
+      "Model / series",
+      "Price range",
+      "Storage",
+      "Condition /10",
+      "PTA status",
+      "Available only"
+    ],
+    "default_sort": "Newest arrivals",
+    "search": "Instant search",
+    "prices": "Show PKR prices",
+    "stock_badges": [
+      "Fresh arrival",
+      "Featured pick",
+      "Excellent condition"
+    ],
+    "sold_behavior": "Move to a sold archive",
+    "stock_freshness": "Last updated timestamp",
+    "availability_refresh": "Immediate with refresh",
+    "device_fields": [
+      "Brand / model",
+      "Storage / color",
+      "Selling price in PKR",
+      "Condition /10",
+      "Battery health",
+      "PTA registration status",
+      "Carrier lock / JV status",
+      "SIM / eSIM type",
+      "Repair / parts history",
+      "Known faults / cosmetic marks",
+      "Included box / cable",
+      "Checking / return terms"
+    ],
+    "condition_method": "Manual grade + checklist",
+    "score_precision": "Half points: 9, 9.5, 10",
+    "battery_display": "Battery % where available",
+    "gallery": "Photos + short condition video",
+    "comparison": "Compare up to 3 devices",
+    "purchase_flow": "WhatsApp enquiry first",
+    "whatsapp_primary": "+92 341 8070670",
+    "whatsapp_secondary": "+92 323 3013439",
+    "enquiry_channels": [
+      "Phone call",
+      "Instagram DM",
+      "Store visit / directions"
+    ],
+    "reservation": "Staff confirms a hold",
+    "payments": [
+      "Cash on delivery",
+      "Bank transfer",
+      "Online card payment"
+    ],
+    "customer_accounts": "Guest shopping",
+    "sales_process": "all is done by ukkasha ali",
+    "request_entry": "Website form + admin inbox",
+    "request_fields": [
+      "Brand / model",
+      "Color preferences",
+      "PTA preference",
+      "Extra notes"
+    ],
+    "request_notify": "Admin inbox only",
+    "request_fee": "Free request, no commitment",
+    "request_terms": "we will read your request something and the phone will be in our main stock if we got stay tuned or something like that",
+    "admin_users": "One owner account",
+    "admin_login": "Google sign-in",
+    "admin_entry": "Draft → preview → publish",
+    "admin_tools": [
+      "Add / edit / archive devices",
+      "Available / reserved / sold states",
+      "Featured picks",
+      "Photo / video management",
+      "Requests inbox",
+      "Price updates",
+      "Private purchase cost / margin",
+      "Inspection checklist",
+      "Team account management"
+    ],
+    "upload_flow": "Both mobile and desktop",
+    "video_policy": "Direct upload, compressed playback",
+    "publish_permissions": "Trusted staff can publish",
+    "admin_delete": "Archive + restore + activity log",
+    "store_address": "Shop E-40, 1st Floor, Saima Mobile Market, Johar Mor, Block 10-A, Gulshan-e-Iqbal, Karachi",
+    "store_hours": "Mon–Sat, 4 PM–10:30 PM",
+    "warranty_days": "7 days",
+    "fulfillment": [
+      "Pakistan-wide shipping",
+      "Cash on delivery",
+      "Store pickup"
+    ],
+    "trust_content": [
+      "Owner introduction",
+      "Store photos / tour",
+      "Customer reviews with permission",
+      "Policy pages",
+      "Payment / delivery guidance"
+    ],
+    "privacy_retention": "Open requests: 30 days; closed requests: delete contact data after 45 days unless needed for an active transaction; owner to confirm",
+    "instagram_url": "https://www.instagram.com/iphones_by_shah/",
+    "facebook_url": "https://www.facebook.com/p/Iphones-By-Shah-61558806308817/",
+    "tiktok_url": "https://www.tiktok.com/@iphones_by_shah",
+    "social_display": "Curated reel / post links",
+    "site_language": "English + occasional Roman Urdu",
+    "copy_tone": "Premium, friendly and direct",
+    "release_scope": "Focused premium launch",
+    "later_features": [],
+    "build_approach": "Developer recommends the stack",
+    "launch_checks": [
+      "Mobile catalogue works smoothly",
+      "3D has a fast poster fallback",
+      "Reduced motion is respected",
+      "Keyboard / accessible forms",
+      "Sold phones cannot be ordered",
+      "Only approved admins can edit",
+      "Photos / videos upload reliably",
+      "Requests reach the right inbox",
+      "Policies approved by owner",
+      "Search / share previews work",
+      "Backup and restore documented",
+      "Staff training completed"
+    ],
+    "maintenance": "Business handles stock, developer handles technical care"
+  },
+  "notes": {
+    "hero_motion": "i want \nGentle float + cursor tilt\nand\nScroll-driven choreography\nboth,\n\n\nwhen website reloads or open they should start with animation and come to their places",
+    "sold_behavior": "there would be a sold phones option too to see the phones sold if a phone i sold it goes in there and removed from main stock available",
+    "stock_volume": "D:\\proj\\iphones_by_shah\\temp it has iphones images use them as available stock and 3 sold ",
+    "device_fields": "checking would be no checking 3 day checking 7 day checking or cusom days selection",
+    "inspection": "i dont wanna show check inspection tests, it will be done manually and uploaded the admin will check and determine score on its own",
+    "photo_count": "require is just one pic recommended is 6 with a video as main  display image we can set if we want video of image",
+    "identifier": "i dont want this to show to people ",
+    "purchase_flow": "they can contact us on wapp using the left side floating whatsapp button, or opening a phone card watching its video details there will be option of contact us on wapp for this phone? or something like that so it takes them to wapp with the info about phone we watching the whatsapp number will be used\n",
+    "request_flexibility": "customers can just request we wont show alternatives or stuff we just acknowledge and if we want to provide it we will post it in our normal main stock",
+    "request_states": "dont add it",
+    "request_followup": "dont add it",
+    "publish_permissions": "only one person is managing rightnow",
+    "content_ownership": "dont do anything with this",
+    "domain": "i will host it on github pages for now",
+    "launch_date": "it doesnt matter i will just live it",
+    "maintenance": "admin"
+  },
+  "decisions": [
+    {
+      "id": "brand_name",
+      "question": "What exact business name should the website use?",
+      "status": "chosen",
+      "chosen": "iPhones by Shah",
+      "notes": "",
+      "recommended": "iPhones by Shah"
+    },
+    {
+      "id": "brand_owner",
+      "question": "Who is the business contact and final approver?",
+      "status": "chosen",
+      "chosen": "Ukkasha Ali",
+      "notes": "",
+      "recommended": "Ukkasha Ali"
+    },
+    {
+      "id": "positioning",
+      "question": "How should the phones be positioned?",
+      "status": "chosen",
+      "chosen": "Curated phones",
+      "notes": "",
+      "recommended": "Curated phones"
+    },
+    {
+      "id": "tagline",
+      "question": "What happens to “The Name of Trust”?",
+      "status": "chosen",
+      "chosen": "Keep as a supporting line",
+      "notes": "",
+      "recommended": "Keep as a supporting line"
+    },
+    {
+      "id": "audience",
+      "question": "Who are the priority customers?",
+      "status": "chosen",
+      "chosen": [
+        "Value-conscious buyers"
+      ],
+      "notes": "",
+      "recommended": [
+        "Young professionals",
+        "Value-conscious buyers",
+        "iPhone enthusiasts"
+      ]
+    },
+    {
+      "id": "categories",
+      "question": "Which product categories launch on day one?",
+      "status": "chosen",
+      "chosen": [
+        "Apple iPhones"
+      ],
+      "notes": "",
+      "recommended": [
+        "Apple iPhones"
+      ]
+    },
+    {
+      "id": "primary_goal",
+      "question": "What is the number-one business outcome?",
+      "status": "chosen",
+      "chosen": "Stock enquiries",
+      "notes": "",
+      "recommended": "Stock enquiries"
+    },
+    {
+      "id": "brand_differences",
+      "question": "What can Shah prove that other shops cannot?",
+      "status": "chosen",
+      "chosen": "best prices ",
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "brand_inspiration",
+      "question": "Any reference sites, must-haves or hard no’s?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "visual_direction",
+      "question": "Which white-themed direction feels right?",
+      "status": "chosen",
+      "chosen": "White studio",
+      "notes": "",
+      "recommended": "White studio"
+    },
+    {
+      "id": "accent",
+      "question": "Choose the accent color.",
+      "status": "chosen",
+      "chosen": "Burgundy",
+      "notes": "",
+      "recommended": "Shah orange"
+    },
+    {
+      "id": "logo_use",
+      "question": "How should the existing logo appear?",
+      "status": "chosen",
+      "chosen": "Original + clean wordmark",
+      "notes": "",
+      "recommended": "Original + clean wordmark"
+    },
+    {
+      "id": "headline",
+      "question": "Choose the hero copy direction.",
+      "status": "chosen",
+      "chosen": "Your next phone. A whole new feeling.",
+      "notes": "",
+      "recommended": "Your next phone. A whole new feeling."
+    },
+    {
+      "id": "hero_motion",
+      "question": "How should the three-phone hero move?",
+      "status": "chosen",
+      "chosen": "Gentle float + cursor tilt",
+      "notes": "i want \nGentle float + cursor tilt\nand\nScroll-driven choreography\nboth,\n\n\nwhen website reloads or open they should start with animation and come to their places",
+      "recommended": "Gentle float + cursor tilt"
+    },
+    {
+      "id": "side_models",
+      "question": "Which phones sit beside the center iPhone 18?",
+      "status": "chosen",
+      "chosen": "Use the supplied 16 + Duo",
+      "notes": "",
+      "recommended": "Use the supplied 16 + Duo"
+    },
+    {
+      "id": "mobile_3d",
+      "question": "What should happen on smaller phones?",
+      "status": "chosen",
+      "chosen": "One optimized 3D hero",
+      "notes": "",
+      "recommended": "Poster first, tap for 3D"
+    },
+    {
+      "id": "micro_interactions",
+      "question": "Which smaller interactions belong in the design?",
+      "status": "chosen",
+      "chosen": [
+        "Soft section reveals",
+        "Stock-card hover lift",
+        "Smooth gallery transitions",
+        "Filter transitions",
+        "Custom cursor",
+        "Subtle loading skeletons"
+      ],
+      "notes": "",
+      "recommended": [
+        "Soft section reveals",
+        "Stock-card hover lift",
+        "Smooth gallery transitions",
+        "Filter transitions",
+        "Subtle loading skeletons"
+      ]
+    },
+    {
+      "id": "stock_layout",
+      "question": "How should stock cards feel?",
+      "status": "chosen",
+      "chosen": "Editorial grid",
+      "notes": "",
+      "recommended": "Editorial grid"
+    },
+    {
+      "id": "desktop_cards",
+      "question": "How many stock columns on desktop?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": 3
+    },
+    {
+      "id": "inventory_unit",
+      "question": "What does one stock listing represent?",
+      "status": "chosen",
+      "chosen": "One individual device",
+      "notes": "",
+      "recommended": "One individual device"
+    },
+    {
+      "id": "home_stock",
+      "question": "How should stock be advertised on the homepage?",
+      "status": "chosen",
+      "chosen": "Fresh stock immediately after hero",
+      "notes": "",
+      "recommended": "Fresh stock immediately after hero"
+    },
+    {
+      "id": "stock_filters",
+      "question": "Which filters should customers get?",
+      "status": "chosen",
+      "chosen": [
+        "Brand",
+        "Model / series",
+        "Price range",
+        "Storage",
+        "Condition /10",
+        "PTA status",
+        "Available only"
+      ],
+      "notes": "",
+      "recommended": [
+        "Brand",
+        "Model / series",
+        "Price range",
+        "Storage",
+        "Condition /10",
+        "PTA status",
+        "Carrier / JV status",
+        "Available only"
+      ]
+    },
+    {
+      "id": "default_sort",
+      "question": "What is the default stock order?",
+      "status": "chosen",
+      "chosen": "Newest arrivals",
+      "notes": "",
+      "recommended": "Newest arrivals"
+    },
+    {
+      "id": "search",
+      "question": "How should search work?",
+      "status": "chosen",
+      "chosen": "Instant search",
+      "notes": "",
+      "recommended": "Instant search"
+    },
+    {
+      "id": "prices",
+      "question": "How should prices appear?",
+      "status": "chosen",
+      "chosen": "Show PKR prices",
+      "notes": "",
+      "recommended": "Show PKR prices"
+    },
+    {
+      "id": "stock_badges",
+      "question": "Which badges are useful?",
+      "status": "chosen",
+      "chosen": [
+        "Fresh arrival",
+        "Featured pick",
+        "Excellent condition"
+      ],
+      "notes": "",
+      "recommended": [
+        "Fresh arrival",
+        "Featured pick",
+        "Available",
+        "Reserved",
+        "Sold"
+      ]
+    },
+    {
+      "id": "sold_behavior",
+      "question": "What happens after a phone sells?",
+      "status": "chosen",
+      "chosen": "Move to a sold archive",
+      "notes": "there would be a sold phones option too to see the phones sold if a phone i sold it goes in there and removed from main stock available",
+      "recommended": "Keep page, mark sold"
+    },
+    {
+      "id": "stock_freshness",
+      "question": "How should customers see stock freshness?",
+      "status": "chosen",
+      "chosen": "Last updated timestamp",
+      "notes": "",
+      "recommended": "Last updated timestamp"
+    },
+    {
+      "id": "availability_refresh",
+      "question": "How fast should stock changes reach visitors?",
+      "status": "chosen",
+      "chosen": "Immediate with refresh",
+      "notes": "",
+      "recommended": "Immediate with refresh"
+    },
+    {
+      "id": "stock_volume",
+      "question": "How many devices at launch, and how often does stock change?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "D:\\proj\\iphones_by_shah\\temp it has iphones images use them as available stock and 3 sold ",
+      "recommended": ""
+    },
+    {
+      "id": "device_fields",
+      "question": "Which details must every published listing have?",
+      "status": "chosen",
+      "chosen": [
+        "Brand / model",
+        "Storage / color",
+        "Selling price in PKR",
+        "Condition /10",
+        "Battery health",
+        "PTA registration status",
+        "Carrier lock / JV status",
+        "SIM / eSIM type",
+        "Repair / parts history",
+        "Known faults / cosmetic marks",
+        "Included box / cable",
+        "Checking / return terms"
+      ],
+      "notes": "checking would be no checking 3 day checking 7 day checking or cusom days selection",
+      "recommended": [
+        "Brand / model",
+        "Storage / color",
+        "Selling price in PKR",
+        "Stock ID",
+        "Condition /10",
+        "Battery health",
+        "PTA registration status",
+        "Carrier lock / JV status",
+        "SIM / eSIM type",
+        "Prior ownership",
+        "Repair / parts history",
+        "Known faults / cosmetic marks",
+        "Included box / cable",
+        "Checking / return terms"
+      ]
+    },
+    {
+      "id": "condition_method",
+      "question": "How is the score out of 10 decided?",
+      "status": "chosen",
+      "chosen": "Manual grade + checklist",
+      "notes": "",
+      "recommended": "Manual grade + checklist"
+    },
+    {
+      "id": "score_precision",
+      "question": "What precision should the /10 rating use?",
+      "status": "chosen",
+      "chosen": "Half points: 9, 9.5, 10",
+      "notes": "",
+      "recommended": "Half points: 9, 9.5, 10"
+    },
+    {
+      "id": "grading_rules",
+      "question": "What exactly qualifies as a 10, 9, 8 or lower?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "battery_display",
+      "question": "How should battery information be shown?",
+      "status": "chosen",
+      "chosen": "Battery % where available",
+      "notes": "",
+      "recommended": "Battery % + test / source note"
+    },
+    {
+      "id": "inspection",
+      "question": "Which inspection checks are actually performed?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "i dont wanna show check inspection tests, it will be done manually and uploaded the admin will check and determine score on its own",
+      "recommended": [
+        "Display / touch",
+        "Face ID / fingerprint",
+        "Cameras",
+        "Speakers / microphone",
+        "Charging / port",
+        "Buttons",
+        "Wi-Fi / Bluetooth",
+        "SIM / calls",
+        "Battery",
+        "Parts / repair history",
+        "Activation lock check"
+      ]
+    },
+    {
+      "id": "gallery",
+      "question": "What should the product media experience be?",
+      "status": "chosen",
+      "chosen": "Photos + short condition video",
+      "notes": "",
+      "recommended": "Photos + short condition video"
+    },
+    {
+      "id": "photo_count",
+      "question": "How many actual-device photos should be required?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "require is just one pic recommended is 6 with a video as main  display image we can set if we want video of image",
+      "recommended": 6
+    },
+    {
+      "id": "identifier",
+      "question": "How much device identification is public?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "i dont want this to show to people ",
+      "recommended": "Stock ID only"
+    },
+    {
+      "id": "comparison",
+      "question": "Should customers compare devices?",
+      "status": "chosen",
+      "chosen": "Compare up to 3 devices",
+      "notes": "",
+      "recommended": "Compare up to 3 devices"
+    },
+    {
+      "id": "purchase_flow",
+      "question": "How should customers buy at launch?",
+      "status": "chosen",
+      "chosen": "WhatsApp enquiry first",
+      "notes": "they can contact us on wapp using the left side floating whatsapp button, or opening a phone card watching its video details there will be option of contact us on wapp for this phone? or something like that so it takes them to wapp with the info about phone we watching the whatsapp number will be used\n",
+      "recommended": "WhatsApp enquiry first"
+    },
+    {
+      "id": "whatsapp_primary",
+      "question": "Which WhatsApp number is the primary sales line?",
+      "status": "chosen",
+      "chosen": "+92 341 8070670",
+      "notes": "",
+      "recommended": "+92 341 8070670"
+    },
+    {
+      "id": "whatsapp_secondary",
+      "question": "Which backup contact should be shown?",
+      "status": "chosen",
+      "chosen": "+92 323 3013439",
+      "notes": "",
+      "recommended": "+92 323 3013439"
+    },
+    {
+      "id": "enquiry_channels",
+      "question": "Which other enquiry options should appear?",
+      "status": "chosen",
+      "chosen": [
+        "Phone call",
+        "Instagram DM",
+        "Store visit / directions"
+      ],
+      "notes": "",
+      "recommended": [
+        "Phone call",
+        "Store visit / directions"
+      ]
+    },
+    {
+      "id": "reservation",
+      "question": "How should reservations work?",
+      "status": "chosen",
+      "chosen": "Staff confirms a hold",
+      "notes": "",
+      "recommended": "Staff confirms a hold"
+    },
+    {
+      "id": "hold_rules",
+      "question": "What are the reservation and cancellation rules?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "payments",
+      "question": "Which payment methods does Shah actually accept?",
+      "status": "chosen",
+      "chosen": [
+        "Cash on delivery",
+        "Bank transfer",
+        "Online card payment"
+      ],
+      "notes": "",
+      "recommended": [
+        "Cash on delivery"
+      ]
+    },
+    {
+      "id": "customer_accounts",
+      "question": "Do shoppers need accounts?",
+      "status": "chosen",
+      "chosen": "Guest shopping",
+      "notes": "",
+      "recommended": "Guest shopping"
+    },
+    {
+      "id": "sales_process",
+      "question": "Who handles enquiries and when?",
+      "status": "chosen",
+      "chosen": "all is done by ukkasha ali",
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "request_entry",
+      "question": "How should phone requests be submitted?",
+      "status": "chosen",
+      "chosen": "Website form + admin inbox",
+      "notes": "",
+      "recommended": "Website form + admin inbox"
+    },
+    {
+      "id": "request_fields",
+      "question": "What should a request ask for?",
+      "status": "chosen",
+      "chosen": [
+        "Brand / model",
+        "Color preferences",
+        "PTA preference",
+        "Extra notes"
+      ],
+      "notes": "",
+      "recommended": [
+        "Brand / model",
+        "Storage",
+        "Budget range",
+        "Minimum condition /10",
+        "PTA preference",
+        "Carrier / JV preference",
+        "Name",
+        "WhatsApp number",
+        "City",
+        "Extra notes"
+      ]
+    },
+    {
+      "id": "request_flexibility",
+      "question": "Can the customer accept alternatives?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "customers can just request we wont show alternatives or stuff we just acknowledge and if we want to provide it we will post it in our normal main stock",
+      "recommended": "Yes, with preference choices"
+    },
+    {
+      "id": "request_notify",
+      "question": "How does the team receive a new request?",
+      "status": "chosen",
+      "chosen": "Admin inbox only",
+      "notes": "",
+      "recommended": "Admin inbox + email alert"
+    },
+    {
+      "id": "request_states",
+      "question": "Which request statuses should the admin support?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "dont add it",
+      "recommended": [
+        "New",
+        "Contacted",
+        "Sourcing",
+        "Match found",
+        "Customer notified",
+        "Fulfilled",
+        "Cancelled"
+      ]
+    },
+    {
+      "id": "request_followup",
+      "question": "How should matching-stock follow-up work?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "dont add it",
+      "recommended": "Suggested matches in admin"
+    },
+    {
+      "id": "request_fee",
+      "question": "Is requesting a phone free?",
+      "status": "chosen",
+      "chosen": "Free request, no commitment",
+      "notes": "",
+      "recommended": "Free request, no commitment"
+    },
+    {
+      "id": "request_terms",
+      "question": "What should customers expect after requesting?",
+      "status": "chosen",
+      "chosen": "we will read your request something and the phone will be in our main stock if we got stay tuned or something like that",
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "admin_users",
+      "question": "Who will use the admin?",
+      "status": "chosen",
+      "chosen": "One owner account",
+      "notes": "",
+      "recommended": "Owner + stock staff"
+    },
+    {
+      "id": "admin_login",
+      "question": "How should admin sign-in work?",
+      "status": "chosen",
+      "chosen": "Google sign-in",
+      "notes": "",
+      "recommended": "Email + password + MFA"
+    },
+    {
+      "id": "admin_entry",
+      "question": "What is the stock-entry workflow?",
+      "status": "chosen",
+      "chosen": "Draft → preview → publish",
+      "notes": "",
+      "recommended": "Draft → preview → publish"
+    },
+    {
+      "id": "admin_tools",
+      "question": "Which admin tools belong in the first release?",
+      "status": "chosen",
+      "chosen": [
+        "Add / edit / archive devices",
+        "Available / reserved / sold states",
+        "Featured picks",
+        "Photo / video management",
+        "Requests inbox",
+        "Price updates",
+        "Private purchase cost / margin",
+        "Inspection checklist",
+        "Team account management"
+      ],
+      "notes": "",
+      "recommended": [
+        "Add / edit / archive devices",
+        "Available / reserved / sold states",
+        "Featured picks",
+        "Photo / video management",
+        "Requests inbox",
+        "Price updates",
+        "Duplicate a listing",
+        "Private purchase cost / margin",
+        "Inspection checklist",
+        "Activity log",
+        "Team account management"
+      ]
+    },
+    {
+      "id": "upload_flow",
+      "question": "How should photos and videos be added?",
+      "status": "chosen",
+      "chosen": "Both mobile and desktop",
+      "notes": "",
+      "recommended": "Both mobile and desktop"
+    },
+    {
+      "id": "video_policy",
+      "question": "How should product videos be managed?",
+      "status": "chosen",
+      "chosen": "Direct upload, compressed playback",
+      "notes": "",
+      "recommended": "Direct upload, compressed playback"
+    },
+    {
+      "id": "upload_limits",
+      "question": "What media limits fit your workflow?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": "Up to 10 photos; JPEG/PNG/WebP; one video up to 60 seconds; 25 MB video source limit; 4:5 cover crop"
+    },
+    {
+      "id": "publish_permissions",
+      "question": "Can staff publish immediately?",
+      "status": "chosen",
+      "chosen": "Trusted staff can publish",
+      "notes": "only one person is managing rightnow",
+      "recommended": "Trusted staff can publish"
+    },
+    {
+      "id": "admin_delete",
+      "question": "How should mistakes and deletions be handled?",
+      "status": "chosen",
+      "chosen": "Archive + restore + activity log",
+      "notes": "",
+      "recommended": "Archive + restore + activity log"
+    },
+    {
+      "id": "admin_reporting",
+      "question": "Which business reports are useful?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "store_address",
+      "question": "Confirm the exact current store address.",
+      "status": "chosen",
+      "chosen": "Shop E-40, 1st Floor, Saima Mobile Market, Johar Mor, Block 10-A, Gulshan-e-Iqbal, Karachi",
+      "notes": "",
+      "recommended": "Shop E-40, 1st Floor, Saima Mobile Market, Johar Mor, Block 10-A, Gulshan-e-Iqbal, Karachi"
+    },
+    {
+      "id": "store_hours",
+      "question": "Which opening hours are current?",
+      "status": "chosen",
+      "chosen": "Mon–Sat, 4 PM–10:30 PM",
+      "notes": "",
+      "recommended": "Mon–Sat, 4 PM–10:30 PM"
+    },
+    {
+      "id": "warranty_days",
+      "question": "Which checking / return period is approved?",
+      "status": "chosen",
+      "chosen": "7 days",
+      "notes": "",
+      "recommended": "7 days"
+    },
+    {
+      "id": "warranty_terms",
+      "question": "What are the exact checking, exchange and return terms?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "fulfillment",
+      "question": "Which delivery and pickup options are confirmed?",
+      "status": "chosen",
+      "chosen": [
+        "Pakistan-wide shipping",
+        "Cash on delivery",
+        "Store pickup"
+      ],
+      "notes": "",
+      "recommended": [
+        "Pakistan-wide shipping",
+        "Cash on delivery"
+      ]
+    },
+    {
+      "id": "delivery_terms",
+      "question": "What are the delivery charges, timing and courier rules?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "trust_content",
+      "question": "Which real trust content can we use?",
+      "status": "chosen",
+      "chosen": [
+        "Owner introduction",
+        "Store photos / tour",
+        "Customer reviews with permission",
+        "Policy pages",
+        "Payment / delivery guidance"
+      ],
+      "notes": "",
+      "recommended": [
+        "Owner introduction",
+        "Store photos / tour",
+        "Actual inspection process",
+        "Customer reviews with permission",
+        "Policy pages",
+        "Payment / delivery guidance"
+      ]
+    },
+    {
+      "id": "policy_exceptions",
+      "question": "Any other policies or operational exceptions?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "privacy_retention",
+      "question": "How long should request and order data be kept?",
+      "status": "chosen",
+      "chosen": "Open requests: 30 days; closed requests: delete contact data after 45 days unless needed for an active transaction; owner to confirm",
+      "notes": "",
+      "recommended": "Open requests: 90 days; closed requests: delete contact data after 180 days unless needed for an active transaction; owner to confirm"
+    },
+    {
+      "id": "instagram_url",
+      "question": "Confirm the official Instagram link.",
+      "status": "chosen",
+      "chosen": "https://www.instagram.com/iphones_by_shah/",
+      "notes": "",
+      "recommended": "https://www.instagram.com/iphones_by_shah/"
+    },
+    {
+      "id": "facebook_url",
+      "question": "Confirm the official Facebook page.",
+      "status": "chosen",
+      "chosen": "https://www.facebook.com/p/Iphones-By-Shah-61558806308817/",
+      "notes": "",
+      "recommended": "https://www.facebook.com/p/Iphones-By-Shah-61558806308817/"
+    },
+    {
+      "id": "tiktok_url",
+      "question": "Confirm the TikTok link.",
+      "status": "chosen",
+      "chosen": "https://www.tiktok.com/@iphones_by_shah",
+      "notes": "",
+      "recommended": "https://www.tiktok.com/@iphones_by_shah"
+    },
+    {
+      "id": "social_display",
+      "question": "How should Instagram content appear?",
+      "status": "chosen",
+      "chosen": "Curated reel / post links",
+      "notes": "",
+      "recommended": "Curated reel / post links"
+    },
+    {
+      "id": "site_language",
+      "question": "What language should the customer site use?",
+      "status": "chosen",
+      "chosen": "English + occasional Roman Urdu",
+      "notes": "",
+      "recommended": "English + occasional Roman Urdu"
+    },
+    {
+      "id": "copy_tone",
+      "question": "How should the website sound?",
+      "status": "chosen",
+      "chosen": "Premium, friendly and direct",
+      "notes": "",
+      "recommended": "Premium, friendly and direct"
+    },
+    {
+      "id": "content_ownership",
+      "question": "Who supplies the launch content?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "dont do anything with this",
+      "recommended": [
+        "Business supplies actual device photos",
+        "Business supplies condition videos",
+        "Business approves product copy",
+        "Business provides policy wording",
+        "Business provides permitted reviews",
+        "Developer writes draft brand copy"
+      ]
+    },
+    {
+      "id": "social_rights",
+      "question": "Which posts, photos and reviews are approved for reuse?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "content_examples",
+      "question": "Any custom headline, FAQ, promotion or brand story?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "release_scope",
+      "question": "How ambitious should the first release be?",
+      "status": "chosen",
+      "chosen": "Focused premium launch",
+      "notes": "",
+      "recommended": "Focused premium launch"
+    },
+    {
+      "id": "later_features",
+      "question": "Which features can wait for phase two?",
+      "status": "chosen",
+      "chosen": [],
+      "notes": "",
+      "recommended": [
+        "Online card checkout",
+        "Automated social feed",
+        "Back-in-stock alerts",
+        "Customer accounts"
+      ]
+    },
+    {
+      "id": "build_approach",
+      "question": "Do you have a build approach preference?",
+      "status": "chosen",
+      "chosen": "Developer recommends the stack",
+      "notes": "",
+      "recommended": "Developer recommends the stack"
+    },
+    {
+      "id": "domain",
+      "question": "What domain should be used, and who owns it?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "i will host it on github pages for now",
+      "recommended": ""
+    },
+    {
+      "id": "hosting",
+      "question": "Any existing hosting, database or email services?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    },
+    {
+      "id": "budget_range",
+      "question": "What build budget should guide the scope?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": null
+    },
+    {
+      "id": "launch_date",
+      "question": "What is the target launch date?",
+      "status": "custom",
+      "chosen": null,
+      "notes": "it doesnt matter i will just live it",
+      "recommended": ""
+    },
+    {
+      "id": "launch_checks",
+      "question": "Which acceptance checks should be required?",
+      "status": "chosen",
+      "chosen": [
+        "Mobile catalogue works smoothly",
+        "3D has a fast poster fallback",
+        "Reduced motion is respected",
+        "Keyboard / accessible forms",
+        "Sold phones cannot be ordered",
+        "Only approved admins can edit",
+        "Photos / videos upload reliably",
+        "Requests reach the right inbox",
+        "Policies approved by owner",
+        "Search / share previews work",
+        "Backup and restore documented",
+        "Staff training completed"
+      ],
+      "notes": "",
+      "recommended": [
+        "Mobile catalogue works smoothly",
+        "3D has a fast poster fallback",
+        "Reduced motion is respected",
+        "Keyboard / accessible forms",
+        "Sold phones cannot be ordered",
+        "Only approved admins can edit",
+        "Photos / videos upload reliably",
+        "Requests reach the right inbox",
+        "Policies approved by owner",
+        "Search / share previews work",
+        "Backup and restore documented",
+        "Staff training completed"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "question": "Who maintains the website after launch?",
+      "status": "chosen",
+      "chosen": "Business handles stock, developer handles technical care",
+      "notes": "admin",
+      "recommended": "Business handles stock, developer handles technical care"
+    },
+    {
+      "id": "final_notes",
+      "question": "Anything else the website needs to do?",
+      "status": "open",
+      "chosen": null,
+      "notes": "",
+      "recommended": ""
+    }
+  ]
+}
