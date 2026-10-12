@@ -14,8 +14,17 @@ export function seedDevices(base) {
     id:`00000000-0000-4000-8000-${String(i+1).padStart(12,'0')}`,model,storage,color,price,condition,battery,pta,carrier,
     sim:'Nano-SIM + eSIM',repairs:'Confirm with Shah before purchasing.',marks:'See the actual device media and confirm with Shah.',includes:'Device only; confirm accessories.',checkingDays:7,
     checkingTerms:'Confirm coverage and exchange terms with Shah before purchase.',description:'A curated pre-owned device. Review the photos and confirm the details before making your choice.',
-    availability:i<6?'available':'sold',published:true,archived:false,featured:i===0||i===2,coverIndex:0,
+    availability:i<6&&i!==1?'available':'sold',published:true,archived:false,featured:i===0||i===2,coverIndex:0,
     media:[{id:crypto.randomUUID(),type:'image',url:`${base}stock/phone-${file}.png`,alt:`${model} in ${color}`}],
     createdAt:new Date(Date.UTC(2026,9,11,12-i)).toISOString(),updatedAt:new Date(Date.UTC(2026,9,11,12-i)).toISOString(),sample:true
   }));
+}
+
+// Update the original preview once, without replacing locally edited inventory.
+export function migratePreviewStock(state) {
+  if (state.seedRevision >= 1) return false;
+  const duo = state.devices.find(d => d.id === '00000000-0000-4000-8000-000000000002' && d.sample === true && d.model === 'iPhone Duo');
+  if (duo) duo.availability = 'sold';
+  state.seedRevision = 1;
+  return true;
 }

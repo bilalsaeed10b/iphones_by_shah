@@ -1,5 +1,6 @@
 import './style.css';
 import './pages.css';
+import './quality.css';
 import {setupShowroom} from './showroom.js';
 import {productPath, legacyDestination} from './navigation.js';
 import * as store from './store.js';
@@ -40,7 +41,7 @@ function visual(media,device,options={}){
 function getFilters(){if(page==='home')return {view:'available',sort:'newest'};return {view:collection,search:$('#search').value,model:$('#filter-model').value,storage:$('#filter-storage').value,pta:$('#filter-pta').value,maxPrice:$('#filter-price').value,condition:$('#filter-condition').value,availableOnly:$('#filter-available').checked,sort:$('#sort').value};}
 function setCollection(view){collection=view;$('#filter-available').disabled=view==='sold';if(view==='sold')$('#filter-available').checked=false;[['available-tab','available'],['sold-tab','sold']].forEach(([id,key])=>{const link=$('#'+id);link.classList.toggle('active',key===view);if(key===view)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');});$('#stock-title').innerHTML=view==='sold'?'Good finds.<br><em>Already found.</em>':'Fresh stock.<br><em>Your next favourite.</em>';$('#stock-eyebrow').textContent=view==='sold'?'01 / THE SOLD ARCHIVE':'01 / THE CURRENT COLLECTION';renderStock();}
 function renderStock(){
-  const matches=filterDevices(devices,getFilters()),shown=page==='home'?matches.slice(0,3):matches;const current=devices.filter(d=>!d.archived&&d.published&&d.availability!=='sold').length;const sold=devices.filter(d=>!d.archived&&d.published&&d.availability==='sold').length;
+  const matches=filterDevices(devices,getFilters()),shown=page==='home'?matches.slice(0,4):matches;const current=devices.filter(d=>!d.archived&&d.published&&d.availability!=='sold').length;const sold=devices.filter(d=>!d.archived&&d.published&&d.availability==='sold').length;
   $('#available-count').textContent=current;$('#sold-count').textContent=sold;$('#nav-count').textContent=devices.filter(canEnquire).length;$('#hero-stock-count').textContent=devices.filter(canEnquire).length;
   $('#results-count').textContent=`${shown.length} ${shown.length===1?'phone':'phones'} ${collection==='sold'?'in the archive':'to explore'}`;
   const activeFilters=['model','storage','pta','maxPrice','condition','availableOnly'].filter(key=>getFilters()[key]).length;$('#filter-count').textContent=activeFilters;$('#filter-count').hidden=!activeFilters;

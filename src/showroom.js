@@ -6,9 +6,11 @@ export function setupShowroom(base) {
   const smallScreen = matchMedia('(max-width:600px)');
   const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)');
   let motion = !reducedMotion.matches, heroVisible = true, duoVisible = false, duoReady = false;
-  let scrollQueued = false, playFrame = 0, playing = false, manualPose = null, runtime, splashDone = false;
+  let scrollQueued = false, playFrame = 0, playing = false, manualPose = null, runtime, splashDone = false, splashExit;
+  let qualityVisible = false, qualityReady = false, qualityRequested = false, qualityManualPose = null;
   const loaded = new Set(), progress = new Map();
   const stage = $('#phone-stage'), duo = $('#duo-model'), story = $('#duo-story');
+  const quality = $('#quality-model'), qualityStory = $('#quality-story');
   const startedAt = performance.now();
 
   // The decoder must be configured before importing the renderer/upgrading elements.
@@ -20,8 +22,15 @@ export function setupShowroom(base) {
 
   function dismissSplash(fallback = false) {
     if (splashDone) return;
+    // Let the three-part brand entrance finish even on a warm asset cache.
+    const remaining = (reducedMotion.matches ? 0 : 1550) - (performance.now() - startedAt);
+    if (remaining > 0) {
+      clearTimeout(splashExit);
+      splashExit = setTimeout(() => dismissSplash(fallback), remaining);
+      return;
+    }
     splashDone = true;
-    clearTimeout(splashLimit);
+    clearTimeout(splashLimit);clearTimeout(splashExit);
     $('#scene-splash').hidden = true;
     document.body.classList.add('scene-ready');
     document.body.dataset.sceneLoadMs = String(Math.round(performance.now() - startedAt));
@@ -73,6 +82,7 @@ export function setupShowroom(base) {
       stage.style.setProperty('--tx', '0deg'); stage.style.setProperty('--ty', '0deg');
       slots.forEach(slot => {slot.style.setProperty('--sx', '0px');slot.style.setProperty('--sy', '0px');});
       setDuoPose(1);
+      setQualityPose(1);
     }
     syncMotion();
   }
@@ -88,6 +98,41 @@ export function setupShowroom(base) {
     stage.style.setProperty('--ty', `${-((event.clientY - bounds.top) / bounds.height - .5) * 4}deg`);
   });
   stage.addEventListener('pointerleave', () => {stage.style.setProperty('--tx','0deg');stage.style.setProperty('--ty','0deg');});
+
+  function setQualityPose(value) {
+    const p = Math.max(0, Math.min(1, value));
+    const step = p < .34 ? 0 : p < .72 ? 1 : 2;
+    qualityStory.dataset.progress = p.toFixed(3);
+    qualityStory.style.setProperty('--quality-progress', `${p * 100}%`);
+    qualityStory.style.setProperty('--quality-tilt', `${-8 + p * 16}deg`);
+    document.querySelectorAll('[data-quality-position]').forEach((button,index) => button.setAttribute('aria-pressed', String(index === step)));
+    document.querySelectorAll('[data-quality-detail]').forEach((detail,index) => {detail.hidden=index !== step;});
+    $('#quality-progress').textContent = `0${step + 1} / 03`;
+    if (!qualityReady) return;
+    // A full orbit reveals the real supplied model, ending closer to the cameras.
+    const eased = p * p * (3 - 2 * p);
+    quality.setAttribute('camera-orbit', `${155 + eased * 360}deg ${78 - eased * 8}deg ${105 - eased * 7}%`);
+    quality.setAttribute('field-of-view', `${28 - eased * 3}deg`);
+  }
+  async function loadQuality() {
+    if (qualityRequested) return;
+    qualityRequested = true;
+    try {
+      await loadRuntime();
+      quality.addEventListener('load', () => {qualityReady=true;qualityStory.classList.add('loaded');setQualityPose(Number(qualityStory.dataset.progress)||0);});
+      quality.addEventListener('error', () => {qualityStory.classList.add('preview-fallback');});
+      quality.loading = 'eager';
+      quality.setAttribute('src', asset(quality.dataset.src));
+    } catch { qualityStory.classList.add('preview-fallback'); }
+  }
+  const qualityObserver = new IntersectionObserver(entries => {
+    qualityVisible = entries[0].isIntersecting;
+    if (qualityVisible) {loadQuality();updateScroll();} else qualityManualPose=null;
+  }, {rootMargin:'450px 0px'});
+  qualityObserver.observe(qualityStory);
+  document.querySelectorAll('[data-quality-position]').forEach(button => button.addEventListener('click', () => {
+    qualityManualPose=Number(button.dataset.qualityPosition);setQualityPose(qualityManualPose);
+  }));
 
   function setDuoPose(value) {
     const p = Math.max(0, Math.min(1, value));
@@ -148,15 +193,19 @@ export function setupShowroom(base) {
       const travel=Math.max(1,bounds.height - window.innerHeight);
       setDuoPose(motion ? -bounds.top / travel : 1);
     }
+    if (qualityVisible && qualityManualPose === null && !document.hidden) {
+      const bounds=qualityStory.getBoundingClientRect();
+      setQualityPose(motion ? -bounds.top / Math.max(1,bounds.height - window.innerHeight) : 1);
+    }
   }
   // Keep an explicitly selected pose during focus/anchor scrolling; resume scrubbing
   // when the visitor scrolls with the wheel, touch or keyboard.
-  const resumeScroll = () => {manualPose=null;stopPlaying();};
+  const resumeScroll = () => {manualPose=null;qualityManualPose=null;stopPlaying();};
   window.addEventListener('wheel',resumeScroll,{passive:true});
   window.addEventListener('touchmove',resumeScroll,{passive:true});
   window.addEventListener('keydown',event=>{if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key))resumeScroll();});
   window.addEventListener('scroll', () => {if(!scrollQueued){scrollQueued=true;requestAnimationFrame(updateScroll);}}, {passive:true});
-  window.addEventListener('resize', () => {manualPose=null;syncMotion();updateScroll();});
-  setDuoPose(0);loadHeroModels();
+  window.addEventListener('resize', () => {manualPose=null;qualityManualPose=null;syncMotion();updateScroll();});
+  setDuoPose(motion ? 0 : 1);setQualityPose(motion ? 0 : 1);loadHeroModels();
   return {toggleMotion: () => setMotion(!motion)};
 }

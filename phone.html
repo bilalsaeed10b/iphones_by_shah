@@ -16,14 +16,30 @@
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Store","name":"iPhones by Shah","url":"https://bilalsaeed10b.github.io/iphones_by_shah/","telephone":"+923418070670","address":{"@type":"PostalAddress","streetAddress":"Shop E-40, First Floor, Saima Mobile Market, Johar Mor, Block 10-A","addressLocality":"Gulshan-e-Iqbal, Karachi","addressCountry":"PK"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"16:00","closes":"22:30"},"sameAs":["https://www.instagram.com/iphones_by_shah/","https://www.facebook.com/p/Iphones-By-Shah-61558806308817/"]}
   </script>
-  <style>.scene-splash{position:fixed;inset:0;z-index:200;background:#f8f8f5;display:grid;place-items:center;text-align:center}.scene-splash>div{display:flex;flex-direction:column;align-items:center;gap:12px}.splash-word{font:650 64px/1 Arial,sans-serif;letter-spacing:-.08em;color:#242421}.splash-caption{font:9px/1.5 Arial,sans-serif;letter-spacing:.18em;color:#777873}.splash-track{width:145px;height:1px;background:#dedfd8;margin:18px 0 2px}.splash-track i{display:block;width:0;height:100%;background:#743643;transition:width .3s}#splash-status{font:11px/1.5 Arial,sans-serif;color:#777873}[hidden]{display:none!important}</style>
+  <style>
+    .scene-splash{position:fixed;inset:0;z-index:200;background:#f8f8f5;display:grid;place-items:center;text-align:center}
+    .scene-splash>div{display:flex;flex-direction:column;align-items:center;gap:12px}
+    .splash-brand{display:flex;flex-direction:column;align-items:center;color:#242421;padding:15px}
+    .splash-iphone{font:400 40px/1.1 Arial,sans-serif;letter-spacing:-.055em;animation:splash-in .55s cubic-bezier(.2,.7,.2,1) both}
+    .splash-signature{display:flex;align-items:baseline;gap:11px;margin-top:3px}
+    .splash-by{font:400 23px/1 Arial,sans-serif;letter-spacing:-.04em;animation:splash-left .5s .42s cubic-bezier(.2,.7,.2,1) both}
+    .splash-word{font:650 64px/1 Arial,sans-serif;letter-spacing:-.08em;animation:splash-in .6s .88s cubic-bezier(.2,.7,.2,1) both}
+    .splash-caption{font:9px/1.5 Arial,sans-serif;letter-spacing:.18em;color:#777873}
+    .splash-track{width:145px;height:1px;background:#dedfd8;margin:18px 0 2px}
+    .splash-track i{display:block;width:0;height:100%;background:#743643;transition:width .3s}
+    #splash-status{font:11px/1.5 Arial,sans-serif;color:#777873}
+    @keyframes splash-in{from{opacity:0;transform:translateY(14px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+    @keyframes splash-left{from{opacity:0;transform:translateX(-45px)}to{opacity:1;transform:translateX(0)}}
+    @media(prefers-reduced-motion:reduce){.splash-iphone,.splash-by,.splash-word{animation:none}}
+    [hidden]{display:none!important}
+  </style>
   <title>Your next iPhone | iPhones by Shah</title>
   <link rel="icon" href="./logo.png">
   <script type="module" src="/src/main.js"></script>
 </head>
 <body data-page="phone">
   <a class="skip" href="#public-site">Skip to content</a>
-  <div class="scene-splash" id="scene-splash" data-pages="home" role="status" aria-live="polite" hidden><div><span class="splash-word">SHAH.</span><span class="splash-caption">A WHOLE NEW FEELING.</span><div class="splash-track"><i id="splash-fill"></i></div><span id="splash-status">Setting the scene.</span></div></div>
+  <div class="scene-splash" id="scene-splash" data-pages="home" role="status" aria-live="polite" hidden><div><div class="splash-brand" aria-label="iPhone by Shah"><span class="splash-iphone" aria-hidden="true">iPhone</span><span class="splash-signature" aria-hidden="true"><span class="splash-by">by</span><span class="splash-word">SHAH.</span></span></div><span class="splash-caption">A WHOLE NEW FEELING.</span><div class="splash-track"><i id="splash-fill"></i></div><span id="splash-status">Setting the scene.</span></div></div>
   <header class="header">
     <a class="brand" href="./index.html" aria-label="iPhones by Shah home"><img src="./logo.png" alt="iPhones by Shah logo"><span>iphones <small>by <b>SHAH.</b></small></span></a>
     <nav aria-label="Main navigation"><a href="./stock.html">Current stock <i id="nav-count"></i></a><a href="./sold.html">Sold stock</a><a href="./request.html">Request a phone</a><a href="./contact.html">Visit & contact</a></nav>
@@ -41,7 +57,7 @@
         <div class="phone-slot phone-right"><div class="phone-float"><model-viewer id="phone-right" data-src="models/optimized/iphone-duo-v2.glb" alt="White iPhone Duo foldable concept shown at an angle" camera-controls disable-zoom camera-orbit="30deg 80deg auto" field-of-view="28deg" shadow-intensity="0" exposure="1.1" interaction-prompt="none"><div class="fallback-phone pearl" slot="poster"><i></i><i></i></div></model-viewer></div><span class="phone-caption">03 / IPHONE DUO</span></div>
         <div class="stage-controls"><span class="tiny" id="model-status">SHOWROOM CONCEPTS · DRAG TO EXPLORE</span><button class="text-link" id="motion-toggle" aria-pressed="true">Pause motion <span>Ⅱ</span></button></div>
       </div>
-      <div class="hero-bottom"><a class="button burgundy-button" href="./stock.html">Find your next iPhone <span>↗</span></a><p><b id="hero-stock-count">6</b> phones to explore <span class="divider">/</span> A fresh chapter starts here.</p><a href="#stock-preview" class="scroll-cue" aria-label="Scroll to the stock preview">↓</a></div>
+      <div class="hero-bottom"><a class="button burgundy-button" href="./stock.html">Find your next iPhone <span>↗</span></a><p><b id="hero-stock-count">5</b> phones to explore <span class="divider">/</span> A fresh chapter starts here.</p><a href="#stock-preview" class="scroll-cue" aria-label="Scroll to the stock preview">↓</a></div>
     </section>
     <div class="trust-line" data-pages="home" hidden><span><i>✳</i> INDIVIDUALLY GRADED</span><span><i>✳</i> CLEAR PTA DETAILS</span><span><i>✳</i> PAKISTAN-WIDE DELIVERY</span><span><i>✳</i> TALK DIRECTLY TO SHAH</span></div>
     <section class="collection wrap" id="stock-preview" data-pages="home stock sold" hidden>
@@ -51,8 +67,18 @@
         <label>Brand<select id="filter-brand"><option>Apple</option></select></label><label>Model<select id="filter-model"><option value="">All models</option></select></label><label>Storage<select id="filter-storage"><option value="">Any storage</option><option value="64">64 GB</option><option value="128">128 GB</option><option value="256">256 GB</option><option value="512">512 GB</option><option value="1024">1 TB</option></select></label><label>PTA status<select id="filter-pta"><option value="">Any PTA status</option><option>PTA approved</option><option>Non-PTA</option></select></label><label>Up to PKR<input id="filter-price" type="number" min="0" step="1000" placeholder="Any price"></label><label>Minimum condition<select id="filter-condition"><option value="">Any condition</option><option value="8">8/10 and above</option><option value="9">9/10 and above</option><option value="9.5">9.5/10 and above</option><option value="10">10/10</option></select></label><label class="filter-check"><input id="filter-available" type="checkbox"> Available only</label><button id="reset-filters" class="text-link">Clear filters ↺</button>
       </div>
       <div class="results-row" data-pages="stock sold" hidden><span id="results-count" role="status">Finding your next phone…</span><label>Sort by <select id="sort"><option value="newest">Newest arrivals</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="condition">Best condition</option></select></label></div>
-      <div class="stock-grid" id="stock-grid" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      <div class="stock-grid" id="stock-grid" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
       <div class="collection-all" data-pages="home" hidden><a class="button outline" href="./stock.html">Explore all current stock <span>↗</span></a></div><div class="collection-foot" data-pages="stock sold" hidden><span>Something specific in mind?</span><a class="text-link" href="./request.html">Tell us what you’re looking for <span>↗</span></a><button class="text-link" id="refresh-stock">Refresh stock ↻</button></div>
+    </section>
+    <section class="quality-story" id="quality-story" data-pages="home" aria-labelledby="quality-heading" hidden>
+      <div class="quality-sticky wrap">
+        <div class="quality-copy"><span class="eyebrow">THE SHAH STANDARD / EVERY ANGLE MATTERS</span><h2 id="quality-heading">Great phones.<br><em>Closer attention.</em></h2><p>A good find deserves a closer look. Scroll around our iPhone 18 showcase, then discover the details of your next phone.</p>
+          <div class="quality-chapters" role="group" aria-label="iPhone 18 showcase views"><button data-quality-position="0" aria-pressed="true">01 / The condition</button><button data-quality-position="0.5" aria-pressed="false">02 / The details</button><button data-quality-position="1" aria-pressed="false">03 / Your choice</button></div>
+          <div class="quality-details"><article data-quality-detail="0"><h3>Condition you can see.</h3><p>Individual scores out of 10, with actual device photos and notes on the marks that matter.</p></article><article data-quality-detail="1" hidden><h3>The details, upfront.</h3><p>Battery health, PTA and carrier status belong to the individual listing. Know what you’re considering.</p></article><article data-quality-detail="2" hidden><h3>Find your kind of perfect.</h3><p>Compare your favourites and talk directly to Shah. A closer look makes the choice feel right.</p></article></div>
+          <a class="text-link" href="./stock.html">Explore the collection <span>↗</span></a>
+        </div>
+        <div class="quality-canvas"><span class="quality-word" aria-hidden="true">18.</span><div class="quality-halo" aria-hidden="true"></div><model-viewer id="quality-model" data-src="models/optimized/iphone-18-pro-max-v2.glb" alt="Burgundy iPhone 18 Pro Max concept rotating as you scroll" camera-controls disable-zoom disable-pan camera-orbit="155deg 78deg 105%" field-of-view="28deg" interpolation-decay="90" shadow-intensity="0" exposure="1.15" interaction-prompt="none" loading="lazy" reveal="auto"><div class="fallback-phone burgundy" slot="poster"><i></i><i></i><i></i></div></model-viewer><div class="quality-meter"><span>IPHONE 18 PRO MAX / SHOWROOM CONCEPT</span><span id="quality-progress">01 / 03</span></div><div class="quality-progress-line" aria-hidden="true"><i></i></div><span class="quality-scroll">SCROLL TO EXPLORE <span>↓</span></span></div>
+      </div>
     </section>
     <section class="duo-story" id="duo-story" data-pages="home" aria-labelledby="duo-heading" hidden>
       <div class="duo-sticky wrap">

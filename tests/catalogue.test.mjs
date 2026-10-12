@@ -1,16 +1,38 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { filterDevices,canEnquire,validateDevice,safeMediaURL,requestExpired } from '../src/domain.js';
-import {seedDevices} from '../src/seed.js';
+import {seedDevices,migratePreviewStock} from '../src/seed.js';
 const devices=seedDevices('./');
 test('available collection and sold archive never mix; drafts and archives stay private',()=>{
-  assert.equal(filterDevices(devices).length,6);
-  assert.equal(filterDevices(devices,{view:'sold'}).length,3);
+  assert.equal(filterDevices(devices).length,5);
+  assert.equal(filterDevices(devices,{view:'sold'}).length,4);
+  assert.equal(filterDevices(devices).some(d=>d.model==='iPhone Duo'),false);
+  assert.equal(filterDevices(devices,{view:'sold'}).some(d=>d.model==='iPhone Duo'),true);
   const changed=devices.map((d,i)=>i===0?{...d,availability:'sold'}:i===1?{...d,published:false}:i===2?{...d,archived:true}:d);
   assert.equal(filterDevices(changed).length,3);
   assert.equal(filterDevices(changed,{view:'sold'}).length,4);
   assert.equal(canEnquire({...devices[0],availability:'sold'}),false);
   assert.equal(canEnquire({...devices[0],availability:'reserved'}),false);
+});
+
+test('saved preview moves only the original Duo once and preserves owner edits',()=>{
+  const state={devices:seedDevices('./'),privateDevices:[{deviceId:devices[0].id,purchaseCost:80000}],requests:[{model:'iPhone 16'}],activity:[{action:'Saved phone'}]};
+  state.devices[1].availability='available';
+  state.devices[1].price=200000;
+  state.devices[0].color='Owner edit';
+  const before=structuredClone(state);
+  assert.equal(migratePreviewStock(state),true);
+  const expected={...before,seedRevision:1};expected.devices[1].availability='sold';
+  assert.deepEqual(state,expected);
+  state.devices[1].availability='available';
+  assert.equal(migratePreviewStock(state),false);
+  assert.equal(state.devices[1].availability,'available');
+});
+
+test('preview migration never moves a real replacement for the sample Duo',()=>{
+  const state={devices:[{...devices[1],sample:false,availability:'available'}]};
+  migratePreviewStock(state);
+  assert.equal(state.devices[0].availability,'available');
 });
 test('combined search, price, storage, PTA and condition filters intersect',()=>{
   const matches=filterDevices(devices,{search:'iphone',storage:'128',pta:'PTA approved',condition:9.5,maxPrice:160000});

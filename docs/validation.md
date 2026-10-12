@@ -34,3 +34,17 @@ All seven production documents and the model/renderer/decoder/service-worker end
 Responsive checks at 390 × 844, 760 × 900 and 1920 × 900, plus the default desktop viewport, showed no horizontal overflow. The asset cache tests exercised repeat fetches, exclusion of inventory/configuration/HTML/private routes, partial-request bypass, unavailable/full cache fallback and cleanup limited to old showroom caches.
 
 Screenshots for this revision: `verification/revision-home.jpg`, `verification/revision-mobile.jpg` and `verification/revision-duo.jpg`.
+
+## Stock grid, brand entrance and iPhone 18 story — 12 October 2026
+
+`npm test`: **33 checks passed**, including two preview-migration regressions that preserve owner edits and avoid changing real replacement records. `npm run build`: passed for all seven pages. Final JavaScript: 289.17 kB (80.72 kB gzip); CSS: 53.38 kB (11.44 kB gzip).
+
+The catalogue uses four columns at laptop/desktop widths and two at mobile widths. Browser inspection confirmed four computed columns at 1280 and 1920 pixels, two at 390 pixels, and four homepage preview cards. The sample collection now has five current and four sold phones. The Duo appeared only in the sold collection, and its product page showed the sold message without a purchase enquiry. Catalogue pages still loaded zero 3D model sources.
+
+The splash entrance was observed during its iPhone/by stage. DOM-backed style inspection confirmed iPhone begins at 0 seconds, by enters from the left after 0.42 seconds, and SHAH follows after 0.88 seconds. Successful model loading dismissed the splash without fallback. The entrance can finish before dismissal on a warm cache, while reduced-motion preferences skip its animation and minimum duration.
+
+The new quality section rendered the actual optimized iPhone 18 model. Native wheel scrolling advanced progress from 0 through 0.426 to 0.759, changed camera orbit from 155 to 295.39 to 462.53 degrees, and switched the detail chapters. Rear, edge and screen views were visibly distinct. Explicit view selection worked, and the motion pause control stopped hero rotation and held the quality section at a static scroll pose. The section reuses the hero's model URL and loads on approach.
+
+The quality section was checked at 390 × 844 and 320 × 667 with no horizontal overflow. A compact-height refinement kept its meter and scroll hint within the pinned viewport; at 320 × 667 their bottom edges were approximately 619 and 641 pixels. Browser console inspection reported no errors or warnings. The existing live-backend verification limits remain unchanged.
+
+Screenshots: `verification/collection-four-columns.jpg`, `verification/collection-two-columns.jpg`, `verification/quality-scroll.jpg`, `verification/quality-scroll-turn.jpg` and `verification/quality-mobile.jpg`.

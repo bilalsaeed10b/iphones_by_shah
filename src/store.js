@@ -1,5 +1,5 @@
 import * as backend from './backend.js';
-import {seedDevices} from './seed.js';
+import {seedDevices, migratePreviewStock} from './seed.js';
 import {validateDevice, requestExpired} from './domain.js';
 export const localHost = ['localhost','127.0.0.1','[::1]'].includes(location.hostname);
 let db, localState, base;
@@ -17,7 +17,7 @@ async function pruneLocalRequests(){const remaining=localState.requests.filter(r
 export async function initStore(baseURL) {
   base=baseURL;
   try { await backend.loadConfig(base); if(backend.backendEnabled()){mode='live';return;} } catch(error){backendError=error.message;mode='unavailable';return;}
-  if(localHost){ db=await openDB();localState=await readDB();if(!localState){localState={devices:seedDevices(base),privateDevices:[],requests:[],activity:[]};await persist();}await pruneLocalRequests(); }
+  if(localHost){ db=await openDB();localState=await readDB();if(!localState){localState={devices:seedDevices(base),privateDevices:[],requests:[],activity:[],seedRevision:1};await persist();}else if(migratePreviewStock(localState))await persist();await pruneLocalRequests(); }
   else localState={devices:seedDevices(base),privateDevices:[],requests:[],activity:[]};
 }
 export async function getDevices() { if(mode==='live')return backend.fetchPublishedDevices();if(mode==='unavailable')throw new Error(backendError);return localState.devices.filter(d=>d.published&&!d.archived); }
@@ -52,5 +52,5 @@ export async function backup() {if(!await authorised())throw new Error('Owner ac
 export async function restoreBackup(data) {
   if(mode!=='preview'||!localHost||!demoAdmin)throw new Error('Restore a live backup using the documented server procedure.');
   if(data.project!=='iPhones by Shah'||data.version!==1||!Array.isArray(data.devices)||!Array.isArray(data.requests))throw new Error('Choose a valid Shah backup.');
-  data.devices.forEach(validateDevice);localState={devices:data.devices,privateDevices:data.privateDevices||[],requests:data.requests,activity:data.activity||[]};await persist();
+  data.devices.forEach(validateDevice);localState={devices:data.devices,privateDevices:data.privateDevices||[],requests:data.requests,activity:data.activity||[],seedRevision:1};await persist();
 }
